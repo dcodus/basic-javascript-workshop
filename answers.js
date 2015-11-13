@@ -124,3 +124,21 @@ function factorialLoop(number){
 }
 
 factorialLoop(5);
+
+//A function that finds the longest word in a string
+
+function getLongestWord(string){
+    //Converting the string into an array
+    var stringArray = string.split(" ");
+    //Setting up the word to check against
+    var longestWord = "";
+    stringArray.forEach(function(word){
+        //replacing the longestWord with the longest from the array
+        if(word.length >= longestWord.length){
+            longestWord = word;
+        }
+    })
+    return longestWord;
+}
+
+getLongestWord('hello there you');
