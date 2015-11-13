@@ -165,3 +165,20 @@ function capitalizeWords(string){
 }
 
 capitalizeWords('HELlo THeRe yOu');
+
+//A function that finds and returns the largest number in an array
+var testNumbers = [2,3,4,5,10,12,4,78,34];
+
+function largestNumber(array){
+    var number = 0;
+    for(var i = 0; i < array.length; i++){
+        if(array[i] > number){
+            number = array[i];
+        }
+    }
+    return number;
+}
+
+largestNumber(testNumbers);
+
+//
