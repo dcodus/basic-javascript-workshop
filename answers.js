@@ -25,5 +25,10 @@ function positionString(position, string){
 
 positionString(3, 'montreal');
 
+//A function that adds two number or concatenates two strings or one string and a number
 
-
+function add(a, b){
+    return a + b;
+}
+add(2, 4);
+add("f","g")
