@@ -43,3 +43,21 @@ function multiply(a, b){
 multiply(2,4);
 //This will return NaN
 multiply('a','b');
+
+//A function that takes two numbers and runs an operation based on the third parameter
+
+function calculate(num1, num2, operation){
+    if(operation === 'add'){
+        return num1 + num2;
+    } else if(operation === 'subtract'){
+        return num1 - num2;
+    } else if(operation === 'mult'){
+        return num1 * num2;
+    } else if(operation === 'div'){
+        return num1/num2;
+    } else {
+        return 0;
+    }
+}
+
+calculate(1,2, 'add');
