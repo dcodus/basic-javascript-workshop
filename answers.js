@@ -142,3 +142,26 @@ function getLongestWord(string){
 }
 
 getLongestWord('hello there you');
+
+//Using a function to capitalize words
+
+function capitalizeWord(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+//Here we are using a function within a function to simplify code.
+
+
+function capitalizeWords(string){
+    return string
+        //Take string to lower case
+        .toLowerCase()
+        //Using split to create a new array with all the words separate
+        .split(' ')
+        //Using map to create a new array using the capitalizeWord function
+        .map(capitalizeWord)
+        //Using join to create a new string
+        .join(' ');
+}
+
+capitalizeWords('HELlo THeRe yOu');
