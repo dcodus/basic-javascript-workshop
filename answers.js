@@ -181,4 +181,14 @@ function largestNumber(array){
 
 largestNumber(testNumbers);
 
-//
+//A function that filters out the truthy values
+
+var test = [1,2,'hello', false, true, 4, NaN, 0, ""]
+function truthy(array){
+    //array.filter will return only the elements that are truthy
+    return array.filter(function(element){
+       return element
+    })
+}
+
+truthy(test);
