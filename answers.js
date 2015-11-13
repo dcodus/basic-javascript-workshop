@@ -230,3 +230,24 @@ function unique(arr1, arr2){
 }
 
 unique(test1,test2);
+
+//A function that is a clone of the .map method
+
+var testArray = [1,2,3,4,5,6]
+
+function add(element){
+   return 1 + element;
+}
+
+
+function mapArray(arr, func){
+  var newArray = [];
+  //Go over each element of array
+    arr.forEach(function(element){
+        //Push each element after passing it through the func function
+        newArray.push(func(element))
+    })
+    return newArray;
+}
+
+mapArray(testArray, add);
