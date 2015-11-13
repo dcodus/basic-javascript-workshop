@@ -86,3 +86,41 @@ function reverse(string){
 }
 
 reverse('montreal');
+
+//Two functions calculating the factorial pf a number. One uses recursion and the other uses a for loop.
+
+function factorial(number){
+    if(number < 0){
+        return -1
+        //We are given that the factorial of 0 = 1. This is the base case.
+    } else if(number === 0){
+        return 1;
+        //We work our way up from the base case. Base case = 1;
+        //factorial(5) = 120;
+        //factorial(4) = 20;
+        //factorial(3) = 5;
+        //factorial(2) = 2;
+        //factorial(1) = 1;
+    } else {
+        return number * factorial(number -1);
+    }
+}
+
+
+factorial(5);
+
+function factorialLoop(number){
+    if(number < 0){
+        return 0;
+    }
+    
+    var base = 1;
+    var result = 1;
+    for(var i = base; i <= number; i++){
+        
+            result = result * i;
+    }
+    return result;
+}
+
+factorialLoop(5);
