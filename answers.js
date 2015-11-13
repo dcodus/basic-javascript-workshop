@@ -32,3 +32,14 @@ function add(a, b){
 }
 add(2, 4);
 add("f","g")
+
+//A function that multiplies numbers. If numbers are not passed NaN is returned
+
+
+function multiply(a, b){
+    return a * b;
+}
+
+multiply(2,4);
+//This will return NaN
+multiply('a','b');
