@@ -73,3 +73,16 @@ function repeat(num, string){
 }
 repeat(4, 'hello');
 
+//A function that takes a string and reverses it. In this case we start from the end of the string and work backwords
+//We add every end letter to a new variable and return the reversed string
+
+
+function reverse(string){
+    var reversed = '';
+    for(var i = string.length -1; i >= 0; i--){
+        reversed = reversed + string[i];
+    }
+    return reversed;
+}
+
+reverse('montreal');
