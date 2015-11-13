@@ -7,4 +7,11 @@ function firstCharacter(string){
 }
 firstCharacter('hello');
 
+//Created a function that takes a string and returns the last character 
+
+function lastCharacter(string){
+    return string.charAt(string.length -1);
+}
+lastCharacter('hello');
+
 
