@@ -61,3 +61,15 @@ function calculate(num1, num2, operation){
 }
 
 calculate(1,2, 'add');
+
+//A function that takes a number and a string and returns that string n number of times n = number
+
+function repeat(num, string){
+    var returns = "";
+    for(var i = 0; i < num; i++){
+        returns = returns + string + " ";
+    }
+    return returns;
+}
+repeat(4, 'hello');
+
