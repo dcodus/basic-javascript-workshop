@@ -167,10 +167,10 @@ function capitalizeWords(string){
 capitalizeWords('HELlo THeRe yOu');
 
 //A function that finds and returns the largest number in an array
-var testNumbers = [2,3,4,5,10,12,4,78,34];
+var testNumbers = [-4, -1];
 
 function largestNumber(array){
-    var number = 0;
+    var number = -Infinity;
     for(var i = 0; i < array.length; i++){
         if(array[i] > number){
             number = array[i];
@@ -187,7 +187,7 @@ var test = [1,2,'hello', false, true, 4, NaN, 0, ""]
 function truthy(array){
     //array.filter will return only the elements that are truthy
     return array.filter(function(element){
-       return element
+        return element;
     })
 }
 
@@ -205,3 +205,28 @@ function sum(array){
 }
 
 sum(testArray);
+
+//A function that compares two array and creates a new array with the unique values
+
+
+var test1 = [1,2,3];
+var test2 = [1,2,4,5];
+
+function unique(arr1, arr2){
+    var newArray = [];
+    //I am comparing every element in the second array against the elements in the first
+    arr2.forEach(function(number){
+        if(arr1.indexOf(number) === -1){
+            newArray.push(number);
+        }
+    })
+    //Same operation as above just inversing the check
+    arr1.forEach(function(number){
+        if(arr2.indexOf(number) === -1){
+            newArray.push(number);
+        }
+    })
+    return newArray;
+}
+
+unique(test1,test2);
