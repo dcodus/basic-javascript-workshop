@@ -192,3 +192,16 @@ function truthy(array){
 }
 
 truthy(test);
+
+//A function that sums all the numbers in the array
+
+var testArray = [1,2,3,4,5];
+
+function sum(array){
+    //Taking the previous value and adding it to the current value. 
+   return array.reduce(function(prev, cur){
+        return prev + cur;
+    })
+}
+
+sum(testArray);
