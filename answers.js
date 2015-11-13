@@ -15,3 +15,15 @@ function lastCharacter(string){
 lastCharacter('hello');
 
 
+//Created a function that takes a number and string and returns the letter at the postion specified by the number
+//Indexing starts at 0
+//This will return "r" which is the 4th letter given that indexing starts from 0 '0,1,2,3'
+
+function positionString(position, string){
+    return string.charAt(position + 1);
+}
+
+positionString(3, 'montreal');
+
+
+
