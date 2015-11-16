@@ -4,7 +4,7 @@ var guess;
 var allGuesses = [];
 
     for(var i = 0; i < 4; i++){
-      guess = prompt("Please guess a number!");
+      guess = prompt("Please guess a number from 1 to 10!");
       if(guess === null){
         alert("That makes me sad =(");
         break;
@@ -28,4 +28,4 @@ var allGuesses = [];
     }
 }
 
-gambler()
+gambler();
